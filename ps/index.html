@@ -100,8 +100,8 @@
 <div class="black">
 <div id="primeira">
 <div class="question">
-<h1>Pergunta 1</h1>
-<p>Você Já fez alguma dieta?</p>
+<h1>Pergunta 1 de 3</h1>
+<p>Assim como eu, Você já fez alguma dieta e fracassou?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="segunda()">SIM</button>
@@ -110,8 +110,8 @@
 </div>
 <div id="segunda" class="hide">
 <div class="question">
-<h1>Pergunta </h1>
-<p>Você promete não revelar para ninguém?</p>
+<h1>Pergunta 2 de 3</h1>
+<p>O que você vai ver a seguir mudou a minha vida e de muitos brasileiros, você realmente quer descebrir?</p>
 </div>
 <div class="answer">
 <button class="btn" onclick="terceira()">SIM</button>
@@ -120,7 +120,7 @@
 </div>
 <div id="terceira" class="hide">
 <div class="question">
-<h1>Pergunta 2</h1>
+<h1>Pergunta 3 de 3</h1>
 <p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver até o fim?</p>
 </div>
 <div class="answer">
@@ -134,7 +134,7 @@
 <script>
     function segunda() {
       document.getElementById("primeira").classList.add("hide")
-      document.getElementById("terceira").classList.remove("hide")
+      document.getElementById("segunda").classList.remove("hide")
     }
     function terceira() {
       document.getElementById("segunda").classList.add("hide")
